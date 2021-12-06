@@ -1,0 +1,31 @@
+{
+  "files": {
+    "app.js": "/recipe-native/static/js/app.ff04875d.chunk.js",
+    "app.js.map": "/recipe-native/static/js/app.ff04875d.chunk.js.map",
+    "runtime~app.js": "/recipe-native/static/js/runtime~app.dcb1d518.js",
+    "runtime~app.js.map": "/recipe-native/static/js/runtime~app.dcb1d518.js.map",
+    "static/js/2.6242c53e.chunk.js": "/recipe-native/static/js/2.6242c53e.chunk.js",
+    "static/js/2.6242c53e.chunk.js.map": "/recipe-native/static/js/2.6242c53e.chunk.js.map",
+    "fonts/AntDesign.ttf": "/recipe-native/./fonts/AntDesign.ttf",
+    "fonts/Entypo.ttf": "/recipe-native/./fonts/Entypo.ttf",
+    "fonts/Feather.ttf": "/recipe-native/./fonts/Feather.ttf",
+    "fonts/FontAwesome.ttf": "/recipe-native/./fonts/FontAwesome.ttf",
+    "fonts/FontAwesome5_Brands.ttf": "/recipe-native/./fonts/FontAwesome5_Brands.ttf",
+    "fonts/FontAwesome5_Solid.ttf": "/recipe-native/./fonts/FontAwesome5_Solid.ttf",
+    "fonts/Fontisto.ttf": "/recipe-native/./fonts/Fontisto.ttf",
+    "fonts/Foundation.ttf": "/recipe-native/./fonts/Foundation.ttf",
+    "fonts/Ionicons.ttf": "/recipe-native/./fonts/Ionicons.ttf",
+    "fonts/MaterialCommunityIcons.ttf": "/recipe-native/./fonts/MaterialCommunityIcons.ttf",
+    "fonts/MaterialIcons.ttf": "/recipe-native/./fonts/MaterialIcons.ttf",
+    "fonts/SimpleLineIcons.ttf": "/recipe-native/./fonts/SimpleLineIcons.ttf",
+    "index.html": "/recipe-native/index.html",
+    "manifest.json": "/recipe-native/manifest.json",
+    "serve.json": "/recipe-native/serve.json",
+    "static/js/2.6242c53e.chunk.js.LICENSE.txt": "/recipe-native/static/js/2.6242c53e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.dcb1d518.js",
+    "static/js/2.6242c53e.chunk.js",
+    "static/js/app.ff04875d.chunk.js"
+  ]
+}
