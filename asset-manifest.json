@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/recipe-native/static/js/app.ff04875d.chunk.js",
-    "app.js.map": "/recipe-native/static/js/app.ff04875d.chunk.js.map",
+    "app.js": "/recipe-native/static/js/app.f2859c97.chunk.js",
+    "app.js.map": "/recipe-native/static/js/app.f2859c97.chunk.js.map",
     "runtime~app.js": "/recipe-native/static/js/runtime~app.dcb1d518.js",
     "runtime~app.js.map": "/recipe-native/static/js/runtime~app.dcb1d518.js.map",
-    "static/js/2.6242c53e.chunk.js": "/recipe-native/static/js/2.6242c53e.chunk.js",
-    "static/js/2.6242c53e.chunk.js.map": "/recipe-native/static/js/2.6242c53e.chunk.js.map",
+    "static/js/2.f8b2032d.chunk.js": "/recipe-native/static/js/2.f8b2032d.chunk.js",
+    "static/js/2.f8b2032d.chunk.js.map": "/recipe-native/static/js/2.f8b2032d.chunk.js.map",
     "fonts/AntDesign.ttf": "/recipe-native/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/recipe-native/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/recipe-native/./fonts/Feather.ttf",
@@ -21,11 +21,11 @@
     "index.html": "/recipe-native/index.html",
     "manifest.json": "/recipe-native/manifest.json",
     "serve.json": "/recipe-native/serve.json",
-    "static/js/2.6242c53e.chunk.js.LICENSE.txt": "/recipe-native/static/js/2.6242c53e.chunk.js.LICENSE.txt"
+    "static/js/2.f8b2032d.chunk.js.LICENSE.txt": "/recipe-native/static/js/2.f8b2032d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime~app.dcb1d518.js",
-    "static/js/2.6242c53e.chunk.js",
-    "static/js/app.ff04875d.chunk.js"
+    "static/js/2.f8b2032d.chunk.js",
+    "static/js/app.f2859c97.chunk.js"
   ]
 }
