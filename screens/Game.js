@@ -79,18 +79,23 @@ const Game = ({ navigation: { setOptions } }) => {
       ]).start();
     } else {
       if (equals(recipe[currentRecipe].content, result)) {
-        Animated.sequence([
+        if (currentRecipe + 1 !== recipe.length) {
+          Animated.sequence([
+            Animated.spring(opacityTwo, {
+              toValue: 1,
+              useNativeDriver: true,
+            }),
+            Animated.spring(opacityTwo, {
+              toValue: 0,
+              useNativeDriver: true,
+            }),
+          ]).start();
+          setCurrentRecipe((prev) => prev + 1);
+        } else {
           Animated.spring(opacityTwo, {
             toValue: 1,
             useNativeDriver: true,
-          }),
-          Animated.spring(opacityTwo, {
-            toValue: 0,
-            useNativeDriver: true,
-          }),
-        ]).start();
-        if (currentRecipe + 1 !== recipe.length) {
-          setCurrentRecipe((prev) => prev + 1);
+          }).start();
         }
         setResult([]);
       } else {
