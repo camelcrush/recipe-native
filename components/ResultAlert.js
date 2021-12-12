@@ -17,11 +17,17 @@ const AlertText = styled.Text`
   font-size: 24px;
   font-weight: 700;
 `;
+const Record = styled.Text`
+  color: #e74c3c;
+  font-size: 20px;
+  font-weight: 600;
+`;
 
-const ResultAlert = ({ opacity, color, comment }) => {
+const ResultAlert = ({ opacity, color, comment, record }) => {
   return (
     <Alert style={{ opacity }}>
       <AlertText style={{ color }}>{comment}</AlertText>
+      <Record>{record}</Record>
     </Alert>
   );
 };

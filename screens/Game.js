@@ -41,6 +41,7 @@ const Seconds = styled.Text`
 `;
 
 const Game = ({ navigation: { setOptions } }) => {
+  const [isFinish, setIsFinish] = useState(false);
   const [minutes, setMintes] = useState(0);
   const [seconds, setSeconds] = useState(0);
   const [currentRecipe, setCurrentRecipe] = useState(0);
@@ -50,12 +51,14 @@ const Game = ({ navigation: { setOptions } }) => {
     [currentRecipe]
   );
   useEffect(() => {
-    const timer = setInterval(() => setSeconds((prev) => prev + 1), 1000);
-    return () => clearInterval(timer);
-  }, []);
+    if (!isFinish) {
+      const timer = setInterval(() => setSeconds((prev) => prev + 1), 1000);
+      return () => clearInterval(timer);
+    }
+  }, [isFinish]);
   useEffect(() => {
     setOptions({ title: recipe[currentRecipe].name });
-  }, []);
+  }, [currentRecipe]);
   let choiceRecipe = [];
   const opacityOne = useRef(new Animated.Value(0)).current;
   const opacityTwo = useRef(new Animated.Value(0)).current;
@@ -96,6 +99,7 @@ const Game = ({ navigation: { setOptions } }) => {
             toValue: 1,
             useNativeDriver: true,
           }).start();
+          setIsFinish(true);
         }
         setResult([]);
       } else {
@@ -137,7 +141,12 @@ const Game = ({ navigation: { setOptions } }) => {
         color="#f0932b"
         comment="답을 모두 채우세요"
       />
-      <ResultAlert opacity={opacityTwo} color="#6ab04c" comment="Success!!" />
+      <ResultAlert
+        opacity={opacityTwo}
+        color="#6ab04c"
+        comment="Success!!"
+        record={`${minutes} : ${seconds.toString().padStart(2, 0)}`}
+      />
       <ResultAlert opacity={opacityThree} color="#eb4d4b" comment="Retry!!" />
       <ResultContainer>
         <ResultList result={result} />
