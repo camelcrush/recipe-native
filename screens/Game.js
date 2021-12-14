@@ -66,8 +66,14 @@ const Game = ({ navigation: { setOptions } }) => {
   const onPressCancel = () => {
     setResult([]);
   };
-  const equals = (a, b) =>
-    JSON.stringify(a.slice(4)) === JSON.stringify(b.slice(4));
+  const equals = (a, b) => {
+    const copyA = a.slice();
+    const copyB = b.slice();
+    copyA.splice(2, 4);
+    copyB.splice(2, 4);
+    return JSON.stringify(copyA) === JSON.stringify(copyB);
+  };
+
   const onPressCheck = (result) => {
     if (result.length !== recipe[currentRecipe].content.length) {
       Animated.sequence([
